@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5</title>
+    <link rel="shortcut icon" href="img/icon/accesibilidad.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <!--Cabecera-->
+    
+    <header>
+        <div ><a href="Index.html">Inicio</a><a> > </a><a href="tecnicas.html">tecnicas</a><a> > </a>
+        <a href="aria.html">html</a></div>
+        <h3>Tecnicas.</h3>
+
+        <nav class="menu">
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera">
+            <a href="Index.html" >Inicio</a>
+            <a href="consorcio.html">consorcio W3C</a>
+            <a href="wcag.html">WCAG</a> 
+            <a href="tecnicas.html" style="color: white; background-color: rgba(21, 32, 51, 0.548);">Técnicas</a> 
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera1">
+        </nav>
+
+    </header>
+    <!--cuerpo central-->
+    <main>
+        <section class="contenedorGenerales">
+            <h3>Tecnicas HTML</h3>
+            <div >
+                <div class="bloque-texto">
+                    <h2>10 técnicas HTML:</h2>
+                    <H2><span>1</span> Uso del atributo de idioma en el elemento HTML .</H2>
+                    <p>El objetivo de esta técnica es identificar el idioma predeterminado de un documento
+                        proporcionando el  atributo  lang en el elemento  html.
+                    </p>
+                    <img src="./img/html1.PNG" alt="" class="">
+
+                    <h2><span>2</span> Uso del atributo de título para proporcionar ayuda sensible al contexto.</h2>
+                    <p>El objetivo de esta técnica es proporcionar ayuda sensible al contexto para los usuarios a 
+                        medida que ingresan datos en formularios al proporcionar la información de ayuda en un atributo title. .</p>
+                        <form >
+                            <label for = "searchAddress"> <a>Dirección:</a>  </label>
+                            <input id = "searchAddress" type = "text" size = "30" value = "" name = "searchAddress" 
+                            title = "Ejemplo de dirección: 101 Collins St, Melbourne, Australia" />
+                            <input type="submit" value="validar">
+                        </form> 
+                        
+                    <h2><span>3</span> Uso de aria-labelledby para proporcionar un nombre para los controles de la interfaz de usuario .
+                    </h2>
+                    <p>El propósito de esta técnica es proporcionar nombres para los controles de la interfaz de usuario que puedan leerse con tecnología de asistencia. WAI-ARIA proporciona una forma de asociar texto con una sección, dibujo, elemento de formulario, imagen, etc., utilizando la propiedad aria-labellebdy. Asociando un control de interfaz de usuario, como un campo de formulario, con el texto de la página que lo etiqueta.
+                    </p>
+
+                    <input name = "in1" type = "text" aria-labelledby = "botonBusqueda">
+                    <input name = "botonBusqueda" id = "searchbtn" type = "submit" value = "Buscar">
+                    
+                    
+                    <h2><span>4</span> Uso de aria-describedby para proporcionar descripciones de imágenes .</h2>
+                    
+                    <img src="img/aria5.PNG" aria-describedby="codigoHtml"  class="img-cuerpo"alt="">
+                    <p id="codigoHtml">Esto es una descripcion con aria-describedby sobre la imagen de arriba que es la de el propio codigo que uso. </p>
+                    <h2><span>5.</span> Usar aria-label para proporcionar una etiqueta invisible donde no se puede usar una etiqueta visible.</h2>
+                        <p>Para los usuarios videntes, el contexto y la apariencia visual de un elemento pueden proporcionar pistas suficientes para determinar el propósito. Un ejemplo es la 'X' que se usa a menudo en la esquina superior derecha de los divs emergentes (cajas de luz) para indicar el control para cerrar el div.
+                        </p>
+                        <div id = "caja">
+                            <a style="background-color: royalblue;"> Este es un cuadro emergente.</a>
+                            <button aria-label = "Cerrar" onclick = "document.getElementById ('caja'). style.display = 'none';" class = "botón de cierre"> X </button>				
+                            
+                        </div>
+                        <img src="./img/aria5.1.PNG" alt="">
+                    <H2><span>6</span> Indicación de los controles de formulario requeridos mediante etiqueta label  o leyenda.</H2>
+                    <p>El objetivo de esta técnica es proporcionar una indicación clara de que se requiere un control de formulario 
+                        específico en una aplicación web o formulario para el envío exitoso de datos.</p>
+                        <form>
+                            <fieldset>
+                            <legend align="right"><a>Datos personales(Obligatorio)</a> </legend>
+                            <a >Nombre:</a><input type="text" name="nombre">
+                            <br>
+                            <a>Edad: </a><input type="text" name="edad" size="2">
+                            <br>
+                            <a>Dirección:</a> <input type="text" name="direccion">
+                            </fieldset>
+                        </form>
+                    <h2><span>7</span> Asegurar que los atributos id sean únicos en una página web.</h2>
+                    <h2><span>8</span> Usar h1-h6 para identificar encabezados. </h2>
+                    <img src="./img/html8.PNG" alt="" class="img-tecnicas1">
+                    <h2><span>9</span> Usar ol, ul y dl para listas o grupos de enlaces. </h2>
+                    <img src="./img/html10.PNG" alt="" id="imgs">
+                    <h2><span>10</span>Proporcionar elementos de encabezado al comienzo de cada sección de contenido</h2>
+                    <p>El objetivo de esta técnica es utilizar títulos de sección para transmitir la estructura del contenido. </p>
+                </div>  
+            </div>
+           
+           
+           
+
+        </section>
+    </main>
+   <!--zona lateral --> 
+    <aside class="lateralhtml">
+        <div class="bloque-lateral">
+            <h3>Paginas relacionadas con el contenido</h3> 
+            <a href="https://blog.ida.cl/accesibilidad/como-comprobamos-la-accesibilidad-de-un-sitio-web/"><img src="https://blog.ida.cl/wp-content/uploads/sites/5/2019/05/accesibilidadGAAD-768x551.png" class="image-lateral" >        </a>
+            <a href="https://es.wikipedia.org/wiki/Accesibilidad"><img src="../PaginaWebTema5/img/acc2.svg" class="image-lateral" >        </a>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=123%2C412#captions-prerecorded"><img src="img/W3C.jpg" alt="" class="image-lateral"></a>
+        </div>
+        
+    </aside>
+    <!--pie de pagina-->
+    <footer class="pie-pagina-generales">
+        <div class="pie">
+            <a >calle el agua 26</a>
+            <a >tuEmail@gmail.com</a>
+            <a >JCertificado: AA </a>
+            <a></a>
+            <a></a>
+        </div>
+    </footer>
+</body>
+</html>

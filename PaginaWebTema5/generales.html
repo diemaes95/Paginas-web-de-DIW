@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5</title>
+    <link rel="shortcut icon" href="img/icon/accesibilidad.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <!--Cabecera-->
+    
+    <header>
+        <div ><a href="Index.html">Inicio</a><a> > </a><a href="tecnicas.html">tecnicas</a><a> > </a>
+        <a href="generales.html">Generales</a></div>
+        <h3>Tecnicas.</h3>
+
+        <nav class="menu">
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera">
+            <a href="Index.html" >Inicio</a>
+            <a href="consorcio.html">consorcio W3C</a>
+            <a href="wcag.html">WCAG</a> 
+            <a href="tecnicas.html" style="color: white; background-color: rgba(21, 32, 51, 0.548);">Técnicas</a> 
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera1">
+        </nav>
+
+    </header>
+    <!--cuerpo central-->
+    <main>
+        <section class="contenedorGenerales">
+            <h3>Tecnicas generales</h3>
+            <div class="bloque-texto">
+                <h2>10 tecnicas generales:</h2>
+                <h2><span>1</span> Proporcionar un titulo utilizando la etiqueta title.</h2>
+                <img src="img/general1.png"  class="img-tecnicas"alt="">
+
+                <h2><span>2</span> Proporcionar un rastro de migas de pan.</h2>
+                <p>Un rastro de ruta de navegación ayuda al usuario a visualizar cómo se ha estructurado el contenido y cómo navegar de regreso a páginas web anteriores,
+                     y puede identificar la ubicación actual dentro de una serie de páginas web.</p>
+                <img src="img/general2.png" class="img-tecnicas1" alt="">
+
+                <h2><span>3</span> Proporcionar una alternativa de texto breve que describa 
+                    el propósito del contenido de solo audio y video .
+                </h2>
+                <video src="./video/javascript.mp4" class="video1" title="Video sobre uso de el modo estricto en javascript" controls="controls"></video>
+                
+                <h2><span>4</span>Proporcionar un mapa del sitio. -d</h2>
+                <p>Un mapa del sitio es una página web que proporciona enlaces a diferentes secciones del sitio.</p>
+                <img src="img/general4.png"  class="img-tecnicas1"alt="">
+                <img src="img/general4.1.png"  class="img-tecnicas1"alt="">
+                <h2><span>5</span> Proporcionar un enlace de ayuda en cada página web.</h2>
+                <p>El objetivo de esta técnica es proporcionar ayuda sensible al contexto para los usuarios
+                     a medida que ingresan datos en formularios 
+                    proporcionando al menos un enlace a la información de ayuda en cada página web.</p>
+                    <form action="">
+                        <div>
+                            <label for="lb"><a>Introduce tu DNI</a> </label>
+                            <input type="text" id="lb">
+                            <input type="submit" value="enviar">
+                            <div><a href="help.html">ayuda</a></div>
+                            
+                        </div>
+                    </form>
+
+                    <h2><span>6</span> Alinear texto en un solo lado.</h2>
+                    <p>Muchas personas con discapacidades cognitivas tienen muchos problemas con los bloques de texto que están justificados (alineados tanto en el margen izquierdo como en el derecho). Los espacios entre palabras crean "ríos de blanco" que corren por la página, lo que puede dificultar la lectura del texto para algunas personas. Este error describe situaciones en las que se produce este diseño de texto confuso. La mejor manera de evitar este problema es no crear un diseño de texto que esté completamente justificado.
+                    </p>
+                    <h2><span>7</span> Vinculación a todas las páginas del sitio desde la página de inicio.</h2>
+                    <h2><span>8</span> Combinando enlaces de texto e imágenes adyacentes para el mismo recurso</h2>
+                    
+                    <a href="http:\\www.google.es" title="enlace a la pagina oficial de google">google</a>
+                    <a href="http:\\www.google.es"><img src="./img/general8.png" alt=""></a>
+                    <h2><span>9</span> Complementando el texto del enlace con el atributo de título.</h2>
+                    
+            </div>
+           
+           
+           
+
+        </section>
+    </main>
+   <!--zona lateral --> 
+    <aside class="lateralGenerales">
+        <div class="bloque-lateral">
+            <h3>Paginas relacionadas con el contenido</h3> 
+            <a href="https://blog.ida.cl/accesibilidad/como-comprobamos-la-accesibilidad-de-un-sitio-web/"><img src="https://blog.ida.cl/wp-content/uploads/sites/5/2019/05/accesibilidadGAAD-768x551.png" class="image-lateral" >        </a>
+            <a href="https://es.wikipedia.org/wiki/Accesibilidad"><img src="../PaginaWebTema5/img/acc2.svg" class="image-lateral" >        </a>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=123%2C412#captions-prerecorded"><img src="img/W3C.jpg" alt="" class="image-lateral"></a>
+        </div>
+        
+    </aside>
+    <!--pie de pagina-->
+    <footer class="pie-pagina-generales">
+        <div class="pie">
+            <a >calle el agua 26</a>
+            <a >tuEmail@gmail.com</a>
+            <a >Certificado: AA  </a>
+            <a></a>
+            <a></a>
+        </div>
+    </footer>
+</body>
+</html>

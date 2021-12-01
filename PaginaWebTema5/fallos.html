@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 5</title>
+    <link rel="shortcut icon" href="img/icon/accesibilidad.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <!--Cabecera-->
+    
+    <header>
+        <div ><a href="Index.html">Inicio</a><a> > </a><a href="tecnicas.html">tecnicas</a><a> > </a>
+        <a href="aria.html">Fallos</a></div>
+        <h3>Tecnicas HTML.</h3>
+
+        <nav class="menu">
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera">
+            <a href="Index.html" >Inicio</a>
+            <a href="consorcio.html">consorcio W3C</a>
+            <a href="wcag.html">WCAG</a> 
+            <a href="tecnicas.html" style="color: white; background-color: rgba(21, 32, 51, 0.548);">Técnicas</a> 
+            <img src="img/icon/accesibilidad1.png" alt="" class="icono-cabecera1">
+        </nav>
+
+    </header>
+    <!--cuerpo central-->
+    <main>
+        <section class="contenedorGenerales">
+            <h3>Fallos comunes en paginas web</h3>
+            <div >
+                <div class="bloque-texto">
+                    <h2>10 Fallos comunes:</h2>
+                    <H2><span>1</span> Fallo debido a que el nombre accesible no contiene el texto de la etiqueta visible.</H2>
+                    <p>En este caso el boton dice 'go' pero en su atributo de etiqueta aria dice otra cosa y eso puede crear confusiones.
+                    </p>
+                    <button id="sitesearch" aria-label="parar">Go</button><br>
+                    <img src="./img/f1.PNG" alt="">
+
+                    <h2><span>2</span> Incumplimiento del criterio 1.4.8 debido al uso de texto justificado (alineado con los márgenes izquierdo y derecho)..</h2>
+                    <p>Es recomendable no usar texto justificado ya que puede dar lugar a crear rios de espacios lo cual no es idoneo para gente que le cuesta leer
+                        lo recomendable es que este alineado a la izquierda.
+                    </p>
+                        
+                        
+                    <h2><span>3</span> Imágenes de fondo que no brindan suficiente contraste con el texto de primer plano (o imágenes de texto) .
+                    </h2>
+                    <p>No debemos de poner color de letras que con la imagen de fondo sean ilegibles.
+                    </p>
+
+                   
+                    
+                    
+                    <h2><span>4</span> Fallo al duplicar id en elementos html  .</h2>
+
+                    <p>Nunca se debe de usar un id repetido en los elementos de una pagina web para eso tenemos class</p>
+                    <H2><span>5</span> Fallo debido a la creación de enlaces que no son evidentes visualmente sin visión de color.</H2>
+                    <p>Para que un enlace sea visible debe tener un color distino, 
+                        tiene que estar subrayado y se le puede aplicar un color de hover al pasar el raton sobre el.</p>
+                        
+                    <h2><span>6</span> Fallo debido a la presentación de enlaces de navegación en un orden relativo diferente en diferentes páginas.</h2>
+                    <p>Todas las paginas deben tener el mismo orden de el nav.</p>
+                    <h2><span>7</span> Fallo debido al uso de dos etiquetas diferentes para la misma función en diferentes páginas web dentro de un conjunto de páginas web. </h2>
+                    <p>Debemos tener siempre las mismas etiquetas bien estructuradas en cada pagina de nuestra pagina web.</p>
+                    <h2><span>8</span> Fallo debido a la omisión del atributo alt o la alternativa de texto en elementos img, elementos de área y elementos de entrada de tipo "imagen". </h2>
+                    
+                    <h2><span>9</span> Fallo debido al uso del elemento pre para marcar la información tabular.</h2>
+                    <p>No se recomienda usar la etiqueta pre . </p>
+                    <h2><span>10</span> Fallo debido al uso del elemento blink.</h2>
+                    <p>El elemento blink hace que el contenido parpadee mientras se muestra la pagina y por lo tanto no cumple con el criterio de cumplimiento.</p>
+                </div>  
+            </div>
+           
+           
+           
+
+        </section>
+    </main>
+   <!--zona lateral --> 
+    <aside class="lateralfallos">
+        <div class="bloque-lateral">
+            <h3>Paginas relacionadas con el contenido</h3> 
+            <a href="https://blog.ida.cl/accesibilidad/como-comprobamos-la-accesibilidad-de-un-sitio-web/"><img src="https://blog.ida.cl/wp-content/uploads/sites/5/2019/05/accesibilidadGAAD-768x551.png" class="image-lateral" >        </a>
+            <a href="https://es.wikipedia.org/wiki/Accesibilidad"><img src="../PaginaWebTema5/img/acc2.svg" class="image-lateral" >        </a>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=123%2C412#captions-prerecorded"><img src="img/W3C.jpg" alt="" class="image-lateral"></a>
+        </div>
+        
+    </aside>
+    <!--pie de pagina-->
+    <footer class="pie-pagina-generales">
+        <div class="pie">
+            <a >calle el agua 26</a>
+            <a >tuEmail@gmail.com</a>
+            <a >Certificado WAI: AA </a>
+            <a></a>
+            <a></a>
+        </div>
+    </footer>
+</body>
+</html>

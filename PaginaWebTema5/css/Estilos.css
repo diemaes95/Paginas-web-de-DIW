@@ -1,0 +1,349 @@
+*{
+margin-left: 0%;
+
+}
+
+
+body{
+margin-top: 0%;
+margin-right: 0%;
+background:linear-gradient(to right, rgba(5, 37, 19, 0.836),rgba(0, 0, 0, 0.883)),url(../img/header1.jpg);
+}
+
+
+header{
+   
+    position: absolute;
+    top: 0%;
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    background:linear-gradient(to right, rgb(2, 10, 31), rgb(3, 20, 51)),url(../img/header1.jpg);
+    z-index: 30;
+   
+}
+
+.icono-cabecera{
+    position: absolute;
+    height: 50px;
+    z-index: 50;
+    left: 30%;
+    top: 10px;
+}
+.icono-cabecera1{
+    position: absolute;
+    height: 50px;
+    z-index: 50;
+    left: 74%;
+    top: 10px;
+}
+.menu{
+    
+    position: absolute;
+    background:linear-gradient(to right, rgba(30, 139, 115, 0.733), rgba(6, 75, 102, 0.733));
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    z-index: 60%;
+   
+    
+}
+header > h3{
+    font-size: 400%;
+    position: absolute;
+    left: 27%;
+    top: 15%;
+    color: rgb(255, 255, 255);
+}
+header >div {
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 140%;
+}
+.menu > a{
+    text-decoration: none;
+    font-size: 30px;
+    color:rgba(223, 218, 211, 0.719);
+    position: relative;
+    top: 25%;
+    left: 35%;
+    margin-right: 2%;
+}
+.video1{
+    width: 40%;
+    height: 60%;
+}
+.menu > a:hover{
+    background-color: rgba(21, 32, 51, 0.548);
+    color: rgb(255, 255, 255);
+    border-radius: 10%;
+   
+}
+.img-tecnicas1{
+    width: 39%;
+}
+.contenedor{
+    position: relative;
+    background:linear-gradient(to right, rgba(17, 78, 136, 0.377), rgba(4, 52, 80, 0.651));
+    top: 316px;
+    width: 75%;
+    height: 100%;
+    color: rgb(8, 6, 2);
+    height: 209%;
+    padding: 6% 0 3% 0;
+}
+
+.contenedorGenerales{
+    position: relative;
+    background:linear-gradient(to right, rgba(17, 78, 136, 0.377), rgba(4, 52, 80, 0.651));
+    top: 316px;
+    width: 75%;
+    height: 100%;
+    color: rgb(8, 6, 2);
+    height: 400%;
+    padding: 6% 0 3% 0;
+}
+.im{
+  position: relative;
+  top: 0;
+    width: 75%;
+    height: 40%;
+    left: 10%;
+}
+
+.bloque-texto{
+    position: relative;
+   
+    margin-left: 3%;
+    margin-right: 3%;
+   margin-bottom: 3%;
+    background-color: rgba(0, 0, 0, 0.658);
+   padding: 5% 3% 5% 3%;
+   border-radius: 7%;
+   border: 4px solid rgb(0, 16, 156);
+}
+
+.bloque-texto > h2 ,h3, a, li{
+    color: white;
+}
+.bloque-texto ul > li > a{
+    color: white;
+    font-size: 140%;
+}
+
+.bloque-texto >a{
+    color: white;
+    font-size: 140%;
+    display: block;
+    padding: 2% 0 2% 0;
+}
+.bloque-texto > a:hover{
+    color: turquoise;
+}
+.bloque-texto > p{
+    
+    position: relative;
+    font-size: 20px;
+    color: lavender;
+    left: 1%;
+}
+.bloque-texto > dl{
+    position: relative;
+    font-size: 20px;
+    color: lavender;
+    left: 1%;
+}
+
+span{
+    width: 20px;
+    height: 20px;
+    padding: 5px 13px;
+    margin-right: 5px;
+    font-size: 30px;
+    background-color: rgb(39, 72, 180);
+    border-radius: 35%;
+    margin-right: 5px;
+}
+.contenedor > h3{
+    position: relative;
+    left: 30%;
+    padding: 3% 0 0 0;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+}
+.contenedorGenerales > h3{
+    position: relative;
+    left: 30%;
+    padding: 3% 0 0 0;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+}
+
+.lateral{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 230%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateral-ayuda{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 125%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateral-wc{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 195%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateral-tec{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 143%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateralGenerales{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 340%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateralhtml{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 320%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateralpdf{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 330%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateralfallos{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 220%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.lateralcss{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 260%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+
+.lateralAR{
+    position: absolute;
+    top: 50%;  
+    right: 0;
+    color: oldlace;
+    padding: 0 0 5% 0;
+    width: 25%;
+    height: 200%;
+    background:linear-gradient(to left, rgba(17, 82, 136, 0.377), rgba(4, 52, 80, 0.651));
+}
+.image-lateral{
+    width: 60%;
+    height: 40%;
+    margin-left: 23%;
+    margin-bottom: 6%;
+}
+.bloque-lateral{
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    padding:5% 8% 0 8%;
+}
+footer{
+    position: relative;
+    bottom: -310px;    
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 11, 35);
+}
+.pie-pagina-generales{
+    position: relative;
+    bottom: -318px;    
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 11, 35);
+}
+.pie-pagina-ayuda{
+    position: relative;
+    bottom: -800px;    
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 12, 35);
+}
+.pie-tec{
+    position: relative;
+    bottom: -310px;    
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 11, 35);
+}
+footer > div{
+    font-size: 150%;
+    color: oldlace;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+footer >div > a{
+    margin-right: 50px;
+}
+main{
+    position: relative;
+    top: 0;
+}
+ .img-cuerpo{
+    width: 80%;
+    height: 40%;
+}
+.imgs{
+max-width: 20%;
+height: 15%;
+}
+
+/*
+
+/*
