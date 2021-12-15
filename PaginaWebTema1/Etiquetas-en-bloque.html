@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"><!--favicon Icono de la cabecera de la pagina -->
+    <link rel="stylesheet" href="css/ESTILOS.css">
+    <title>Aprende HTML5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">| Índice |</a>
+            <a href="Formularios.html">| Formularios |</a>
+            <a href="Listas.html">| Listas |</a>
+            <a href="tablas.html">| Tablas |</a>
+            <a href="multimedia.html">| Multimedia |</a>
+            <a href="maquetacion.html">| Maquetacion web |</a>
+            <a href="Etiquetas-en-linea.html">| Etiquetas-en-linea |</a>
+            <a href="" style="
+            background-color: rgb(65, 25, 102);">| Etiquetas-en-bloque |</a>
+            
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Elementos de bloque</h1>
+            
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(247, 239, 239);"></path></svg></div>
+    
+    </header>
+    <main>
+        <!--Parte lateral derecha -->
+        <aside class="menuLateral">
+            <h2>Mejores paginas para diseño web.</h2>
+            <a href="https://www.w3schools.com/" target="_blank"><img  src="img/png/w3s.png" class="Imagenes-Aside" title="w3school.com"></a>
+            <a href="https://htmldog.com/" target="_blank"><img src="img/html-dog.png" alt="" class="Imagenes-Aside" title="htmlDog.com"></a>
+            <a href="https://flotadigital.com/" target="_blank"><img src="img/flota.PNG" alt="" class="Imagenes-Aside" title="FlotaDigital.com"></a>
+            <a href="https://www.htmlgoodies.com/" target="_blank"><img src="img/godies.png" alt="" class="Imagenes-Aside" title="htmlGoodies.com"></a>
+            <a href="https://www.cssbasics.com/" target="_blank"><img src="img/basics.png" alt="" class="Imagenes-Aside" title="cssBasics.com"></a>
+            
+        </aside> 
+        <section > 
+            <h2 class="titulo">Etiquetas en bloque </h2>
+            <div class="contenedor-sobre-nosotros">
+                
+                <div class="contenido-textos" >
+                    <h4>NOTA: cada elemento HTML tiene un valor de visualización predeterminado, dependiendo del tipo de elemento que sea.
+                    
+                    </h4>
+                    <h5>Hay dos valores de visualización: bloque y en línea.</h5>
+                    <h3><span>1</span>Etiquetas a nivel de bloque.</h3><!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    <p> 
+                        UUn elemento en bloque siempre comienza en una nueva línea.
+                        Un elemento en bloque siempre ocupa todo el ancho disponible (se extiende a la izquierda y a la derecha hasta donde puede). 
+                        Un elemento de nivel de bloque tiene un margen superior e inferior, mientras que un elemento en línea no lo tiene.
+                        
+                        El &lt;div&gt; es un elemento a nivel de bloque:
+                    <p>
+                    <img  src="img/ejemploElementoBloque1.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Estos son todos los Elementos en linea que hay:</h4>
+                    <img  src="img/ejemploElementoBloque2.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Resumen.</h4>
+                    <ul class="lista-desordenada"> 
+                        <li>Hay dos valores de visualización: bloque y en línea</li> 
+                        <li>Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible.</li> 
+                        <li>Un elemento en línea no comienza en una nueva línea y solo ocupa la anchura necesaria.</li> 
+                        <li>El elemento es un nivel de bloque y se utiliza a menudo como contenedor para otros elementos HTML&lt;div&gt;.</li> 
+                        <li>El elemento es un contenedor en línea utilizado para marcar una parte de un texto o una parte de un documento&lt;span&gt;.</li> 
+
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>665353748</p>
+            </div>
+            
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>tuPagina@gmail.com</p>
+            </div>
+            
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Camino la torre, 83</p>
+
+            </div>
+            <h2 class="titulo-final">&copy; RuleTeMata</h2>
+        </div>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--es necesario para que acepte caracteres como la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende HTML5</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!--favicon Icono de la cabecera de la pagina -->
+    <link rel="stylesheet" href="css/ESTILOS.css">
+    <link rel="stylesheet" href="https://ionic.io/ionicons">
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> 
+    <base target="_parent">
+    
+
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="Index.html" >| Indice |</a>
+            <a href="Formularios.html">| Formularios |</a>
+            <a href="Listas.html">| Listas |</a>
+            <a href="tablas.html">| Tablas |</a>
+            <a href="multimedia.html">| Multimedia |</a>
+            <a href="" style="
+            background-color: rgb(65, 25, 102);">| Maquetacion web |</a>
+            <a href="Etiquetas-en-linea.html">| Etiquetas-en-linea |</a>
+            <a href="Etiquetas-en-bloque.html">| Etiquetas-en-bloque |</a>
+            
+            
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Maquetacion con Position</h1>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(247, 239, 239);"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <!--Parte lateral derecha -->
+        <aside class="menuLateral">
+            <h2>Mejores paginas para diseño web.</h2>
+            <a href="https://www.w3schools.com/" target="_blank"><img  src="img/png/w3s.png" class="Imagenes-Aside" title="w3school.com"></a>
+            <a href="https://htmldog.com/" target="_blank"><img src="img/html-dog.png" alt="" class="Imagenes-Aside" title="htmlDog.com"></a>
+            <a href="https://flotadigital.com/" ><img src="img/flota.PNG" alt="" class="Imagenes-Aside" title="FlotaDigital.com"></a>
+            <a href="https://www.htmlgoodies.com/" target="_blank"><img src="img/godies.png" alt="" class="Imagenes-Aside" title="htmlGoodies.com"></a>
+            <a href="https://www.cssbasics.com/" target="_blank"><img src="img/basics.png" alt="" class="Imagenes-Aside" title="cssBasics.com"></a>
+            
+        </aside>        
+        <section>
+            <h2 class="titulo">Etiqueta Position, atributos y sus restricciones</h2>
+            <div class="contenedor-sobre-nosotros">
+
+                <div class="contenido-textos">
+                    <h3><span>1</span>Definicion de Position y sus atributos.</h3>
+                    <!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    
+                    <p><b>Position:</b> Esta propiedad permite posicionar cualquier
+                         elemento con algunas restricciones respecto a sus atributos
+                    </p>
+                    
+                    <a>
+                        Aspectos a saber sobre posicionamiento de cajas(POSITION) .
+ 
+                    </a>
+                    <div class="bloque-maquetacion">
+                        <h4>Definiciones:</h4>
+                    
+                        <p> <h4>Espacio reservado:</h4> Espacio de el elemento reservado por el navegador.</p>
+                        <p><h4>Flujo de renderizado:</h4> Es el orden en el que se dibujan los elementos de izquierda a derecha y de arriba a abajo. El punto 0,0 de los ementos es la esquina superior izquierda
+                             y siempre sera el punto de referencia inicial en html. </p>
+                        <p> <h4>Elemento posicionado:</h4> El elemento tiene la propiedad position con un valor distinto a static(valor por defecto).</p>
+                        <p><h4>Stacking context:</h4> Contenido de apilamiento u orden en el que se aplican las cajas que se superponen dentro de el mismo contenedor.</p>
+                    </div>
+                    <div class="bloque-maquetacion">
+                        <p><h4>Al posicionar un elemento con position nos podemos enconmtrar las siguientes propiedades:</h4> </p>
+                        <p><h4>Top:</h4> El elemento se va a mover desde la parte superior la distancia que le hayamos indicado.</p>
+                        <p><h4>Bottom:</h4> El elemento se moverá desde la parte inferior de el contenedor la distancia que le indiquemos. </p>
+                        <p><h4>Right:</h4> El elemento se moverá desde la parte derecha la distancia que le indiquemos.</p>
+                        <p><h4>Left:</h4> El elemento se moverá desde la parte izquierda de el contenedor la distancia que le indiquemos .</p>
+                        <p><h4>Z-Index:</h4> Nos permite mover el elemento en el contexto de apilamiento es decir que nos va a permitir poner un elemento encima de otro, ademas es aconsejable que se le indique de 10 en 10 en la propiedad z-index .</p>
+                        <p><em>NOTA:</em> Solo se pueden declarar o top o bottom o left o rigth siempre uno en vertical y otro en horizontal si al contrario se usa bottom y top 
+                            tiene preferencia top y sobre rigth y left tiene preferencia left(Priman top y left). Como la posicion 0,0 .</p>
+                    </div>
+
+                    <div class="bloque-maquetacion">
+                        <p><h4>Los valores que le podemos dar a position son:</h4></p>
+                        <p><h4>Static:</h4> Es por defecto sin declarar ninguna opcion es decir como si no olo tuviera.</p>
+                        <p><h4>Relative:</h4> Mantiene: su posicion, espacio reservado , medidas de flujo renderizado,
+                             contexto de apilamiento prevalece el primero en aparecer en el html. Por ejemplo: Si desplazamos
+                              el footer hacia la izquierda el aside lateral con relative  no va a ocupar su espacio .</p><img src="img/rel.PNG" >
+                        <img src="img/EjmRelative.PNG" class="imagen-cuerpo1"><p>En caso de quitarle el valor relative a footer aparte de perder su espacio en el navegador prevalece el contexto de apilacion y el aside  quedaria de esta manera al aparecer antes en el codigo .</p>
+                        <img src="img/ej1.PNG" class="">      
+                        <p><h4>Absolute:</h4> Perderá : sus medias,su espacio reservado . Usara el elemento padre como referencia si no lo tiene tendra como referencia el html. Si no le damos tamaño se ajusta al contenido.
+                            los elementos se posicionan de forma relativa al primer elemento padre que tenga una posición distinta a static.</p> <a><em>Nota</em>:Si le añadimos absolute a un elemento en linea hara un efecto inline-block y podra hacer cosas de elemento en bloque.</a>
+                        <h4>ejemplo:</h4>
+                        <p>Si le damos a uno de los bloques de mi pagina el siguiente position.  
+                        </p> <img src="img/ejm2.PNG" alt=""> <p>ocurrira los siguiente.</p>
+                        <img src="img/ej2.PNG" class="imagen-cuerpo1">
+                         <p>Coje de referencia el html en la esquina superior izquierda  y pasa por completo de el contenedor padre.contenido-textos por que su posicion es static(por defecto) si lo cambiamos en el contenedor padre que no sea static coge de referencia a el padre.</p>
+                        <img src="img/e2.1.PNG" >
+                        <img src="img/e2.PNG" class="imagen-cuerpo1">
+                        <p><h4>Fixed:</h4> Perderá: sus medidas , su espacio reservado si lo queremos mover siempre tomara como referncia el documento html por lo tanto se quedara 
+                            por encima de el resto de elementos.<h4> Por ejemplo:</h4> </p>
+                        
+                        <video src="video/PositionFixed.mp4" controls="controls" width="600" height="400"></video>
+                        <p><h4>Sticky:</h4> Es una mezcla de position relative y fixed , con este tipo de posicionamiento no sirve para mover el elemento con  top ,botom ,left y right si no para indicarle  en que punto pasara a tener un comportamiento fixed .
+                            Hasta llegar a ese punto se comportara como si no tuviera posicionamiento , aunque si contara como posicionado si necesitamos colocar otro elemento respecto a el(vale como referencia para un elemento hijo). <h4>Por ejemplo:</h4> </p>
+                            <video src="video/sticky.mp4" controls="controls" width="600" height="400"></video>
+
+                        <p><h4>Z-Index:</h4>En esta propiedad que hemos explicado mas arriba ocurre una cosa, 
+                            y es que si tenemos un contenedor padre y un hijo nunca se va a poner por encima el contenedor padre po rencima de el hijo
+                            a no ser que los valores de z-Index de el hijo sean negativos otra solucion seria que el padre no tenga ningun z-index declarado(con auto ya que es el valor por defecto). <h4>Por ejemplo:</h4>
+                        </p>
+                        <video src="video/Z-index.mp4" controls="controls" width="600" height="400"></video>
+                        <p><h4>Normas:</h4> No utilizar valores consecutivos 1, 2, 3,  y usar por ejemplo rangos de 10 en 10  y como hemos dicho antes en el contexto de apilamiento prevalece el hijo a no ser que el padre tenga z-Index auto y el hijo un valor negativo</p>
+                    </div>
+
+                    
+                   
+                   
+                 </div>
+                
+                
+            </div>
+
+                
+
+           
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>665353748</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>tuPagina@gmail.com</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Camino la torre, 83</p>
+
+            </div>
+            <h2 class="titulo-final">&copy; RuleTeMata</h2>
+        </div>
+
+    </footer>
+</body>
+
+</html>

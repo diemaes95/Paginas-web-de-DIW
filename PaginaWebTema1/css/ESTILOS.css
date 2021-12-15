@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{/*para todo el codigo*/
+    margin: 0;/*establece el margen para los cuatro lados*/
+    
+    padding: 0;/*El área de padding es el espacio entre el contenido del elemento y su borde ( border ). No se permiten valores negativos*/
+    box-sizing: border-box;/*es una propiedad CSS para cambiar el modelo de caja por defecto de los navegadores.*/
+}
+body{
+    /*tipografia */
+    
+    background-color: rgb(247, 239, 239);
+    
+}
+p{
+    padding: 1% 0 1% 0 ;
+    
+}
+nav{
+    text-align: right;/*alinear el texto hacia la derecha*/
+    padding: 30px 50px 0 0;/*  arriba    30px  padding  */
+                            /*  derecha  50px  padding  */
+                            /*  abajo 0 padding  */
+                            /*  izquierda   0  padding
+                        /* en dirección de las agujas del reloj */
+ 
+    
+}
+.contenido-textos > form{
+    
+    padding: 3% 0 0% 0;
+}
+nav > a{/*etiquetas a dentro de nav*/
+    color: rgb(222, 222, 231);/*color de la fuente*/
+    font-weight: 300;/* especifica el  grueso de la letra*/
+    text-decoration: none;/* condicion de el decorado  de los hipervinculos(quita el subrayado por defecto) */
+    margin-right: 10px;/* establece el margen derecho de un elemento especificando una longitud o un porcentaje*/
+    background-color:#0b0f2bc9;
+    padding: 15px  ;
+    border-radius: 20%;
+    
+}
+nav > a:hover{/*elementos dentro de nav  a cambiar cuando pasamos el mouse */
+    
+    background-color: rgb(98, 84, 110);
+ }
+
+ 
+/*Header --Cabecera */
+header{
+    width: 100%;/*establece la anchura */
+    height: 550px;/*establece la altura */
+    background: linear-gradient(to right,#51546cb4, #000214ab ), url(../img/portada.jpg);   /*Este degradado define su dirección por medio de un ángulo expresado en grados*/
+    background-size: cover;/*Si la imagen tiene dos dimensiones propias, se representa en ese tamaño.*/
+    background-attachment:fixed;/*controla si la imagen de fondo establecida en un elemento se mueve o p
+                                 ermanece fija cuando se hace scroll en la ventana del navegador.*/
+    position:relative;/*indica que la capa sí forma parte del flujo normal de elementos de la página,
+                         por lo que su posición dependerá del lugar donde esté en el código y el flujo HTML.*/
+
+}
+header .textos-header{/*para todos los textos de el header*/
+    /*ayuda a colocar las cajas como si fueran celdas de tablas,
+                  con un comportamiento predecible y adaptable*/
+    margin-top: 170px;
+    height: 430px;
+    width: 100%;
+    align-items: center;/* La propiedad align-self 
+                        indica la alineación de un elemento dentro del bloque que lo contiene.*/
+    justify-content: center;/*define cómo el navegador distribuye el espacio entre y
+                             alrededor de los items flex, a lo largo del eje principal de su contenedor*/                
+    text-align: center;/*alineacion de el texto*/
+}
+.textos-header h1 {
+    font-size: 350%;/*tamaño de la fuente*/
+    color: #fff;
+}
+.textos-header h2{
+    font-size: 150%;
+   /*el grueso de la fueente*/
+    color: #fff;
+}
+.contenido-textos > .horario{
+    width: 60%;
+    height: 35%;
+    
+}
+
+ .titulo{
+    color: rgb(65, 25, 102);
+    font-size: 230% ;
+    text-align: center;/*alineacion de texto centrado*/
+    margin-bottom: 60px ;/*(Botom)establece el espacio requerido en la parte inferior de un elemento*/
+    
+}
+.wave{/*estilos para el efecto wave */
+    position: absolute;/*permite posicionar elementos de manera absoluta, esto es de manera definida
+                     por valores de los atributos top, left, bottom y right,
+                      que indican la distancia con respecto a un punto*/
+    bottom: 0;/*permite desplazar un elemento respecto 
+                a su posición original tomando como referencia el borde inferior del elemento.*/
+    width: 100%;/*ancho*/
+    
+    color: rgb(247, 239, 239);
+}
+.menu-izq{
+    float: left;
+    margin-left: 0px;
+    margin-right: 5px;
+    background-color: #8560a3;
+    width: 200px;/*ancho*/
+    height: 500px;
+}
+.menuLateral{
+    float: right;
+    background-color: rgb(247, 239, 239);
+    height: auto;
+    width: 15%;
+    padding: 3% 1% 0 1%;
+    position: sticky;/*sirve para mover el elemento indicandole un punto de salida en este caso es top el punto de salida */
+    right: 0;/*si no es stiky y es fixed por ejemplo habria que indicarle que se posicione a la derecha */
+    top: 0;/*se empezaria a mover desde dicha posicion */
+    
+}
+ aside > a > img {
+    padding: 5% 0 3% 0;
+    width: 90%;
+}
+aside > a > img:hover {
+    background-color: rgba(54, 35, 54, 0.452);
+}
+
+.contenedor-sobre-nosotros{
+    padding: 20px;/*es el espacio entre el contenido del elemento y su borde*/
+    margin-left: 10%;
+    font-size: 20px;
+    margin-right: 20%;
+    
+}
+
+.imagen-cuerpo1{
+    width:  1000px;
+    height: 50%;
+    padding: 3% 0 3% 0;
+    
+}
+.bloque-maquetacion{
+    border: 1px solid rgb(107, 27, 182);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1% 1% 1% 1%;
+
+}
+
+
+
+.bloque-maquetacion > h4{
+    display: inline-block;
+    
+}
+.contenido-textos > h3 > span{
+    background: rgb(65, 25, 102);
+    color:#fff;
+    border-radius: 50%;
+   
+    width: 30px;
+    height: 30px;
+    padding: 5px 13px;
+    margin-right: 5px;
+    
+    
+}
+.contenido-textos > h3{
+    padding: 2% 0 1% 0;
+    
+}
+.contenido-textos{
+    padding: 5% 0 0 0;
+    
+}
+
+.contenedor-footer {
+    
+    position:relative;
+    
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right,#0B0F2B, #123b38ce );
+    align-content: center;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    color: white;
+    margin-top: 3%; /*para que el pie de pagina siempre este abajo */
+    
+    
+}
+.lista-desordenada{
+    margin-left: 20px;
+}
+.content-foo{/*por cada div */
+    float:left; 
+    width:15%
+    
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--es necesario para que acepte caracteres como la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende HTML5</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!--favicon Icono de la cabecera de la pagina -->
+    <link rel="stylesheet" href="css/ESTILOS.css">
+    
+     
+
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="" style="
+            background-color: rgb(65, 25, 102);">| Indice |</a>
+            <a href="Formularios.html">| Formularios |</a>
+            <a href="Listas.html">| Listas |</a>
+            <a href="tablas.html">| Tablas |</a>
+            <a href="multimedia.html">| Multimedia |</a>
+            <a href="maquetacion.html">| Maquetacion web |</a>
+            <a href="Etiquetas-en-linea.html">| Etiquetas-en-linea |</a>
+            <a href="Etiquetas-en-bloque.html">| Etiquetas-en-bloque |</a>
+            
+            
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Tema 1</h1>
+            <h2>Etiquetas Html5  </h2>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(247, 239, 239);"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <!--Parte lateral derecha -->
+        <aside class="menuLateral">
+            <h2>Mejores paginas para diseño web.</h2>
+            <a href="https://www.w3schools.com/" target="_blank"><img  src="img/png/w3s.png" class="Imagenes-Aside" title="w3school.com"></a>
+            <a href="https://htmldog.com/" target="_blank"><img src="img/html-dog.png" alt="" class="Imagenes-Aside" title="htmlDog.com"></a>
+            <a href="https://flotadigital.com/" target="_blank"><img src="img/flota.PNG" alt="" class="Imagenes-Aside" title="FlotaDigital.com"></a>
+            <a href="https://www.htmlgoodies.com/" target="_blank"><img src="img/godies.png" alt="" class="Imagenes-Aside" title="htmlGoodies.com"></a>
+            <a href="https://www.cssbasics.com/" target="_blank"><img src="img/basics.png" alt="" class="Imagenes-Aside" title="cssBasics.com"></a>
+            
+        </aside> 
+        <section>
+            <h2 class="titulo">Etiquetas de metadatos, seccion y modelo de cajas.</h2>
+            <div class="contenedor-sobre-nosotros">
+
+                <div class="contenido-textos">
+                    <h3><span>1</span>Etiquetas de metadatos</h3>
+                    <!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    <a><em>NOTA:</em> Metadato significa datos sobre los datos.</a>
+                    <p>A) &lt;head&gt;: Representa una colección de metadatos  para
+                        el documento. Es un contenedor para las etiquetas: title, style, meta, link,
+                        script y  base.
+                    </p>
+                    
+                    <p>
+                        B) &lt;title&gt;: La etiqueta title es un fragmento de código HTML en el que se incluye el
+                        título de una página web,
+                        que normalmente es un texto que describe lo que encontraremos dentro de esa página.
+
+                    </p>
+                    
+                    <p> C) &lt;base&gt;: Especifica la URL base y/o destino para todas las URL relativas
+                        en una página. Esta etiqueta debe tener: un href + un atributo de destino.
+                        base href=”https:www.prueba.com/ “ target=”_blanck”</p>
+                    <p>
+                        D) &lt;link rel&gt;: Define la relación entre el documento actual y el recurso
+                        externo. Ej: importar hojas de estilo CSS, favicon...
+                        rel: información del tipo de archivo que agregamos.
+                    </p>
+                    <p> E) &lt;style&gt;: Es el elemento encargado de indicar la información de estilo.
+                        Sus etiquetas son: style y /style </p>
+                    <p>F) &lt;script&gt;: Escribe código JS dentro del documento HTML. Poco
+                        recomendable.</p>
+                    <p>
+                        G)&lt;meta&gt;
+                    </p>
+                        <a>Las etiquetas &lt;meta&gt;: sireven para:</a>
+                    <ul class="lista-desordenada">
+                        
+
+                        <li>charset=”UTF8”-----> Especificar el conjunto de caracteres</li>
+                        <li>meta name="descripcion" content="Paginas web de tutoriales" --->Descripción de la página
+                        </li>
+                        <li>meta name=”keywords” content=”HTML, CSS, Javascript”---->Palabras clave</li>
+                        <li>meta name=”author” content=”Diego”----->autor de la página</li>
+                        <li>meta http-equiv=”refresh” content=”30”</li>
+                    </ul>
+
+
+                    </p>
+                    <img src="img/etiqueta-title.PNG" alt="" class="imagen-cuerpo1" width=48%>
+               
+                    
+                    <h3><span>2</span>Etiquetas de sección</h3>
+                    <!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    
+                    
+                    
+                    
+                    <p> A)&lt;body&gt;: Todo el contenido de la página web. Lo que va a ver el usuario.</p>
+                    <p>
+                        B)&lt;header&gt;: Representa la cabecera de un bloque de contenido. Dentro del body lo primero
+                        es la cabecera del documento. Ej: título, menú navegación superior.
+                        Esta etiqueta no hace nada de apariencia en el navegador del PC, si en otros dispositivos. Útil
+                        para que nuestra página sea compatible con todos los dispositivos del mercado.
+
+                    </p>
+                    <p> C)&lt;article&gt;: Representa un contenido completo dentro de una sección. Se recomienda que
+                        dentro exista un encabezado.
+                    </p>
+                    <p>D)&lt;h1&gt;...&lt;h6&gt;: Es un título de una sección o bloque. También indica la importancia
+                        del bloque h1, h2...
+                        Diferente tamaño y siempre en negrita.
+                        Los buscadores buscan mucho estas etiquetas hx. Se supone que la información que contienen es
+                        importante.
+                    </p>
+                    <p>E)&lt;section&gt;: Divide un bloque de contenido. Ej: si un artículo tiene dos párrafos y cada
+                        párrafo habla de una cosa.
+                    </p>
+                    <p>F)&lt;aside&gt;: Representa un contenido relacionado con el contenido principal. Usado para
+                        menús laterales. Indica al navegador que va a haber un contenido de barra lateral
+                    </p>
+                    <p>G)&lt;footer&gt;: Representa el pie de un bloque de contenido. Pie de página: horario,
+                        dirección, datos de contacto…
+                        El HEADER y el FOOTER no solo se usa para cabecera y pie del documento principal. También para
+                        definir cabecera y pie de otros contenidos de la web.
+                    </p>
+                    <p>H)&lt;nav&gt;: Representa los enlaces de navegación de la página.
+                    </p>
+
+                    
+                    <img src="img/ilustracion2.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h3><span>2</span>Modelo de cajas</h3>
+                    <p>En el modelo de cajas estándar, cuando estableces los atributos width y height para una caja, defines el ancho y el alto del contenido de la caja. Cualquier área de relleno y borde se añade a ese ancho y
+                         alto para obtener el tamaño total que ocupa la caja. Esto se muestra en la imagen que encontrarás a continuación.</p>
+                    <img src="img/Modelo-cajas.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                 </div>
+                
+                
+            </div>
+
+                
+
+           
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>665353748</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>tuPagina@gmail.com</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Camino la torre, 83</p>
+
+            </div>
+            <h2 class="titulo-final">&copy; RuleTeMata</h2>
+        </div>
+
+    </footer>
+</body>
+
+</html>

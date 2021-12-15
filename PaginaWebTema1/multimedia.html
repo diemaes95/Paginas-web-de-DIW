@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--es necesario para que acepte caracteres como la ñ-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--que sea compatible con internet explorex-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Con viewport establecemos la zona de la pantalla donde se visualizara el socumento-->
+    <title>Aprende HTML5</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"><!--favicon en la cajita de la pagina -->
+    <!--favicon Icono de la cabecera de la pagina -->
+    <link rel="stylesheet" href="css/ESTILOS.css"><!--enlace a la hoja de estilpos -->
+   
+    <link rel="stylesheet" href="https://ionic.io/ionicons"> <!--para usar iconos alojados en una pagina web-->
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script> <!--script necesario para obtener algunos iconos de la pagina web-->
+    
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <a href="Index.html">| Indice |</a>
+            <a href="Formularios.html">| Formularios |</a>
+            <a href="Listas.html">| Listas |</a>
+            <a href="tablas.html">| Tablas |</a>
+            <a href="" style="
+            background-color: rgb(65, 25, 102);">| Multimedia |</a>
+            <a href="maquetacion.html">| Maquetacion web |</a>
+            <a href="Etiquetas-en-linea.html">| Etiquetas-en-linea |</a>
+            <a href="Etiquetas-en-bloque.html">| Etiquetas-en-bloque |</a>
+            
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Multimedia  </h1>
+            <h2>Insercion de videos ,imagenes y audios</h2>
+
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(247, 239, 239);"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <!--Parte lateral derecha -->
+        <aside class="menuLateral">
+            <h2>Mejores paginas para diseño web.</h2>
+            <a href="https://www.w3schools.com/" target="_blank"><img  src="img/png/w3s.png" class="Imagenes-Aside" title="w3school.com"></a>
+            <a href="https://htmldog.com/" target="_blank"><img src="img/html-dog.png" alt="" class="Imagenes-Aside" title="htmlDog.com"></a>
+            <a href="https://flotadigital.com/" target="_blank"><img src="img/flota.PNG" alt="" class="Imagenes-Aside" title="FlotaDigital.com"></a>
+            <a href="https://www.htmlgoodies.com/" target="_blank"><img src="img/godies.png" alt="" class="Imagenes-Aside" title="htmlGoodies.com"></a>
+            <a href="https://www.cssbasics.com/" target="_blank"><img src="img/basics.png" alt="" class="Imagenes-Aside" title="cssBasics.com"></a>
+            
+        </aside> 
+
+        <!--Parte central -->
+        <section>
+            <h2 class="titulo">Etiquetas de video, audio e imagen.</h2>
+            <div class="contenedor-sobre-nosotros">
+
+                <div class="contenido-textos">
+                    <h3><span>1</span>Etiquetas Video y sus atributos</h3>
+                    <!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    <p>Etiqueta &lt;video&gt; : por fin existe un elemento estandar para incluir video  en una pagina web, y aun asi no ha 
+                        habido forma de consensuar un formato de fichero concreto. En cualquier caso, tanto esta etiqueta como la de el audio 
+                        ,permiten indicar mas de un tipo de archivo de video para que lo puedan interpretar los navegadores que lo elijan
+
+                    </p>
+                    <h4>Ejemplo:</h4>
+                    <video id="miVideo" width="600" height="400" autoplay="autoplay" controls="control" loop="loop" 
+                    muted="muted" poster="img/ilustracion1.PNG">
+                    <source src="video/vid.mp4"  type="video/mp4"/>
+                    <source src="video/vid.ogg" type="video/ogg"/>
+
+                    </video>
+                    <h4>Código:</h4>
+                    <img src="img/video.PNG" class="imagen-cuerpo1" width=48%>
+                    <h4>Atributos:</h4>
+                    <img src="img/atributoVideo.PNG" class="imagen-cuerpo1" width=48%>
+                    
+                    <h3><span>2</span>Etiquetas audio y sus atributos</h3>
+                    <p>Sobre el audio se podria decir lo mismo que el video .Actualmente es una etiqueta estandar es posible indicar mas de un fichero 
+                        para cubrir tosdo los navegadores. 
+                        Dispone de opciones similares para controlar la reproduccion y 
+                        tambien tiene su propio Api para gestionar la reproduccion a traves de javascript.
+                    </p>
+                    <h4>Ejemplo:</h4>
+                    <audio id="audio1" controls="controls" >
+                        <source src="video/audio.mp3" type="audio/ogg">
+                        
+                    </audio>
+                    
+                    <audio  id="audio2" controls="controls" loop="loop" muted="muted">
+                        <source src="video/audio.mp3" type="audio/mpeg">
+                        <source src="video/audio.mp3" type="audio/ogg">
+                    </audio>
+                    <h4>Código:</h4>
+                    <img src="img/audio.PNG" class="imagen-cuerpo1" width=48%>
+                    <h3><span>3</span>Etiquetas de Imagen</h3>
+                    <!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                   <p>Las imagenes son un viejo elemento de html y no han cambiado mucho en html5.
+                       Conviene no olvidar nunca los atributos "alt" para mostrar un texto alternativo 
+                       en caso de no poder cargarse la imagen dejar un mensajito y porsupuesto "title" 
+                       que no deja de ser una descripcion de la imagen.Ambos son importantes para aplicar
+                       mejor tecnicas SEO(es la Optimización de Motores de Búsqueda (Search Engine Optimization)).
+                   </p>
+                   <p>El atributo <b>crossorigins</b> valido para img y video ,
+                     permite configurar peticiones a otros origenes con dos posibles valores: </p>
+                    <a>-<b>user-credentials</b> : habilita CORS enviando las credenciales de el usuario(envio de cookies certificado 
+                        o los valores de autenticacion basica junto con la peticion de el recurso solicitado ).</a>
+                     <p>-<b>anonymous</b> : habilita el soporte para CORS, pero sin enviar credenciales al otro extremo.</p>   
+                     <h4>Ejemplo:</h4><br>
+                     <img id="image-1" src="img/portada.jpg" title="Imagen de javaScript"
+                      alt="Sample image" width="48%"  >
+                     <br>
+                      <img id="image-2" src="img/portada.jpg" title="Imagen de javaScript"
+                      alt="Sample image" width="48%" crossorigin="anonymous" >
+                      <h4>Codigo:</h4>
+                      <img src="img/imgx.PNG" class="imagen-cuerpo1" width=48%>
+
+                 </div>
+                
+                
+            </div>
+
+                
+
+           
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>665353748</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>tuPagina@gmail.com</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Camino la torre, 83</p>
+
+            </div>
+            <h2 class="titulo-final">&copy; RuleTeMata</h2>
+        </div>
+
+    </footer>
+</body>
+
+</html>

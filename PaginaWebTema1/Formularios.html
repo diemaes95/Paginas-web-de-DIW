@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"><!--favicon Icono de la cabecera de la pagina -->
+    <link rel="stylesheet" href="css/ESTILOS.css">
+    <title>Aprende HTML5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">| Índice |</a>
+            <a href="" style="
+            background-color:rgb(65, 25, 102);">| Formularios |</a>
+            <a href="Listas.html">| Listas |</a>
+            <a href="tablas.html">| Tablas |</a>
+            <a href="multimedia.html">| Multimedia |</a>
+            <a href="maquetacion.html">| Maquetacion web |</a>
+            <a href="Etiquetas-en-linea.html">| Etiquetas-en-linea |</a>
+            <a href="Etiquetas-en-bloque.html">| Etiquetas-en-bloque |</a>
+           
+            
+        </nav>
+        <section class="textos-header">
+            <h1>Formularios</h1>
+            
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(247, 239, 239);"></path></svg></div>
+    
+    </header>
+    <main>
+        <!--Parte lateral derecha -->
+        <aside class="menuLateral">
+            <h2>Mejores paginas para diseño web.</h2>
+            <a href="https://www.w3schools.com/" target="_blank"><img  src="img/png/w3s.png" class="Imagenes-Aside" title="w3school.com"></a>
+            <a href="https://htmldog.com/" target="_blank"><img src="img/html-dog.png" alt="" class="Imagenes-Aside" title="htmlDog.com"></a>
+            <a href="https://flotadigital.com/" target="_blank"><img src="img/flota.PNG" alt="" class="Imagenes-Aside" title="FlotaDigital.com"></a>
+            <a href="https://www.htmlgoodies.com/" target="_blank"><img src="img/godies.png" alt="" class="Imagenes-Aside" title="htmlGoodies.com"></a>
+            <a href="https://www.cssbasics.com/" target="_blank"><img src="img/basics.png" alt="" class="Imagenes-Aside" title="cssBasics.com"></a>
+            
+        </aside> 
+        <section > 
+            <h2 class="titulo">Etiquetas de Formulario</h2>
+            <div class="contenedor-sobre-nosotros">
+                
+                <div class="contenido-textos" >
+                    <h3><span>1</span>Elemento &lt;form&gt;</h3><!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    <p> 
+                        El elemento &lt;form&gt; es un contenedor para diferentes tipos de elementos de entrada, tales como: campos de texto,
+                         casillas de verificación, botones de opción, botones de envío, etc.
+                    <p>
+                    <img  src="img/ejemploFormulario1.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                
+                    <h3><span>2</span>Elemento &lt;Imput&gt;</h3><!--span es un contenedor en linea que sirve para darle estilos al texto -->
+                    <p>Es el elemento de formulario mas utilizado.
+                     y se puede mostrar de muchas maneras, dependiendo del atributo por ejemplo:</p>
+                    
+                    
+                    <img src="img/ejemploFormulario2.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Campo de texto: </h4>
+                    <p>El &lt;input type="text"&gt;define un campo de entrada de una sola línea para la entrada de texto.</p>
+                    <img src="img/ejemploFormulario3.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Botones de radio: </h4>
+                    <p>El &lt;input type="radio"&gt;define un boton de radio . Los botones de radio permiten al usuario seleccionar UNA de un número limitado de opciones.</p>
+                    <img src="img/ejemploFormulario4.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Casillas de verificacion:</h4>
+                    <p>Las casillas de verificación &lt;input type="checkbox"&gt; permiten a un usuario seleccionar CERO o MÁS opciones de un número limitado de opciones.</p>
+                    <img src="img/ejemploFormulario5.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>El boton enviar:</h4>
+                    <p>Define un botón para enviar los datos del formulario a un controlador de formularios.&lt;input type="submit"&gt;
+                    Se suele usar para enviar datos a el servidor donde los ejecuta un archivo php .
+                    El documento php  se especifica en el atributo action de el formulario. </p>
+                    <img src="img/ejemploFormulario6.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>El atributo Method de el formulario:</h4>
+                    <p>El atributo Method especifica el método  que se utilizará al enviar los datos del formulario.
+                    Los datos del formulario se pueden enviar como variables declarandolas en el atributo url y el tipo de metodo en method &lt;form url="datos" method="get"method="post"&gt;
+                    El método  predeterminado al enviar datos de formulario es GET.</p>
+                    <h4>El atributo action:</h4>
+                    <p>El atributo action lo que hace es referenciar el archivo php donde se van a ejecutar el código </p>
+                    <img src="img/ejemploFormulario7.PNG" alt="" class="imagen-cuerpo1" width=48%>
+                    <h4>Atributos y etiquetas de Ejemplos:</h4>
+                    <p>Los formularios se pueden agrupar con una etiqueta que  engloba los inputs llamada <b>&lt;fieldset&gt; y &lt;legend&gt;</b> :
+                        <form action="" border="20px" id="formi">
+                            <fieldset>
+                                <legend>Esto es un formulario</legend>
+                                <input type="text" name="nombreUsuario" value="">
+                                <input type="submit" name="enviar" value="enviar">
+                            </fieldset>
+                        </form>
+                        <img src="img/formuejem.PNG" class="imagen-cuerpo1"    >
+                    <p>Una <b>&lt;label&gt;</b>  nos permite etiquetar de manera formal un campo de formulario. Gracias a eso podemos aplicarle estilos css a todas las label diferenciados de el resto de formulario.</p>
+                    <a >Código:</a>
+                    <div>
+                        <label id="lab" for="usuario">Username</label>
+                        <input type="text" name="username" id="usuario" value="">
+
+                    </div>
+                    <div>
+                        <label id="labelRemember" for="recordar">Remember me</label>
+                        <input type="checkbox" name="remember" id="recordar" value="">
+                    </div>
+                    <img src="img/label.PNG" class="imagen-cuerpo1"    >
+                    <p>Un <b>&lt;datalist&gt;</b> genera una lista de datos que ademas es reutilizable por otro tipo de inputs como una lista 
+                    ,en cuanto un imput asociado recibe el foco se despliega una lista con las opciones disponibles de datalist. </p>
+                   <p>Selecciona una opcion:</p>
+                    <input list="languajeList" id="languajes">
+                    <datalist id="languajeList">
+                        <option value="1">JavaScript</option>
+                        <option value="2">TypeScript</option>
+                        <option value="3">CoffeScript</option>
+                    </datalist>
+                    <img src="img/dataList.PNG" class="imagen-cuerpo1"    >
+
+                    <p>Establecer texto dentro de un <b>&lt;input&gt;</b>  con el atributo placeholder:</p>
+                    <label for="login">login</label>
+                    <text id="login" name="login" placeholder="Type your login name" type="text"></text>
+                    <img src="img/placeholder.PNG" class="imagen-cuerpo1">
+                    <p>Button: hay tres tipos de botones básicos <b>input Button , input submit , input reset </b>, el atributo autofocus es para que por defecto se ponga dicho elemento al abrir el formulario.</p>
+                    <p >Aspecto de distintos botones , con el reset deshabilitado y el boton normal con autofocus(resalta el primero).</p>
+                    <input type="button" value="botonNormal"  id="btn">
+                    <input type="reset" value="restart" disabled="disabled" id="rst">
+                    <input type="submit" value="send from"  id="sbmt">
+                    <button id="other">Esto es un boton genérico</button>
+                    <img src="img/botones.PNG" class="imagen-cuerpo1">
+                    <p><b>Meter</b> : Muestra una barra de progreso cuyos atributos o margenes pueden ser configurables.</p>
+                    <p>Low => indica cual es un valor bajo.</p>
+                    <p>Optimum => especifica el intervalo en el que se considera el valor del indicador de ser un valor óptimo.</p>
+
+                    <meter value="5" min="0" max="10" low="1" high="9" optimum="5" id="myMeter">esto es un meter de 0 a 10 </meter>
+                    <img src="img/meter.PNG" class="imagen-cuerpo1">
+
+                    <h3><span>3</span>Formulario tipo date , time , week </h3>
+                    <p>Estos elementos son muy utiles ya que no es necesario usar javascript para poder introducir una hora
+                        o fecha concreta.
+                    </p>
+                    <h4>Ejemplo date:</h4>
+                    <form >
+                        <div>
+                         <label for="lab"> Introduce fecha</label>
+                        <input type="date" name="lab" id="lab" placeholder="enter data" >   
+                        </div>
+                        <div>
+                          <input type="submit" value="Enviar">  
+                        </div>
+                    
+                        <h4>Codigo:</h4>
+                        
+                    </form>
+                    <img src="img/date.PNG" class="imagen-cuerpo1">
+                     <h4>Ejemplo time:</h4>
+                     <form >
+                        <div>
+                         <label for="tm"> Introduce hora</label>
+                        <input type="time" name="tm" id="tm" placeholder="enter hora" >   
+                        </div>
+                        <div>
+                          <input type="submit" value="Enviar">  
+                        </div>
+                    
+                        <h4>Codigo:</h4>
+                        
+                    </form>
+                    <img src="img/time.PNG" class="imagen-cuerpo1">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>665353748</p>
+            </div>
+            
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>tuPagina@gmail.com</p>
+            </div>
+            
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>Camino la torre, 83</p>
+
+            </div>
+            <h2 class="titulo-final">&copy; RuleTeMata</h2>
+        </div>
+        
+    </footer>
+</body>
+</html>
