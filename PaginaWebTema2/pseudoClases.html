@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ESTILOS.css">
+    <title>Tema 2</title>
+
+</head>
+<body>
+    <header>    
+        <nav class="menu"> 
+            <a href="index.html">Home</a>
+                <a href="./pseudoClases.html">Pseudo-Clases</a>
+                
+                <a href="./selecAt.html">Selectores de atributos</a>
+                <a href="">.....</a>
+                
+            
+        </nav>
+        <div class="titulo">
+            <h3>Tema 2: Pseudo-Clases.</h3>
+            <h4>Aprende acerca de Pseudo-Clases en html</h4>
+
+        </div>
+        
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#C1AFBF" fill-opacity="0.4" d="M0,192L1440,32L1440,320L0,320Z"></path>
+        </svg>
+    </header>
+
+    <main>
+        <div class="bloque-texto">
+            <h3>Pseudo-Clases</h3>
+            <h4>¿Que es una Pseudo-Clase?</h4>
+            <p>Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un 
+                estado especial del elemento seleccionado.
+                 Por ejemplo, :hover aplicará un estilo cuando 
+                 el usuario haga hover sobre el elemento especificado por el selector.
+                 </p>
+            <h4>Hay varios tipos de pseudo clase como pueden ser:</h4>
+            <p> <a title="curro">Pseudoclases Dinamicas:</a><br>
+                :link --------> link no visitado<br>
+                :visited --------> link visitado<br>
+                :active --------> representa el elemento que el usuario está activando. Cuando se usa el ratón, la activación, generalmente comienza cuando el usuario presiona el botón primario y termina cuando se suelta. Se usa normalmente con &lta&gt y &ltbutton&gt.<br>
+                :hover --------> al poner el ratón sobre el elemento. <br>
+                :focus --------> cuando el elemento recibe el foco.
+                </p>
+
+            <p><a title="">Pseudoclases de Estado:</a><br>
+                :enabled --------> se aplica a todos los campos del formulario que estén activados. <br>
+                :disabled --------> para los desactivados. Para desactivarlos hay que aplicar específicamente DISABLED.<br>
+                :checked --------> representa cualquier radio, checkbox u option que está marcado o conmutado a un estado on.<br>
+                :in-range --------> representa un elemento input cuyo valor actual se encuentra dentro de los límites de rango especificados por los atributos min y max.<br>
+                :out-of-range --------> fuera de los límites de rango.<br>
+                :required --------> representa cualquier elemento &ltinput&gt, &ltselect&gt o &lttextarea&gt que tenga el atributo required establecido en él. <br>
+                :optional --------> representa cualquier elemento &ltinput&gt, &ltselect&gt 
+                 o &lttextarea&gt que NO tenga el atributo required establecido en él.<br>
+                    :valid --------> representa cualquier elemento &ltinput&gt o del formulario cuyo contenido se valide satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente. <br>
+                    :invalid --------> representa cualquier elemento &ltinput&gt u otro elemento &ltform&gt cuyos contenidos no se puedan validar. <br>
+                    :read-only --------> para campos de solo lectura. <br>
+                    :read-write --------> para campos de lectura y escritura que son la mayoría.
+                    
+            
+            </p>
+            <p><a title="">Pseudoclases de Estructura:</a><br>
+                :root --------> selecciona el elemento raíz de un árbol que representa el documento. En HTML <br>
+                :root representa el elemento &lthtml&gt y es idéntico al selector html, excepto que su especificidad es mayor. <br>
+                :empty --------> representa cualquier elemento que no tenga hijos. Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco). Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.
+            </p>
+            <p><a title="">Pseudoclases de Child:</a><br>
+                :first-child --------> representa el primer elemento entre un grupo de elementos hermanos. <br>
+                    :last-child -------->representa el último elemento entre un grupo de elementos hermanos. <br>
+                    :nth-child(n) --------> selecciona al hijo n (independientemente del tipo de etiqueta). <br>
+                    Valores posibles:
+		            odd: impares
+		            even: pares
+		            valores enteros: 2,4, etc.
+		            ecuaciones: An+B. Siendo A y B enteros. <br>
+                    :nth-last-child(n) --------> selecciona el hijo n empezando a contar desde el final. <br>
+                    :only-child --------> representa un elemento sin hermanos.
+
+            </p>
+            <p><a title="">Pseudoclases de Type:</a>se utiliza cuando tenemos que seleccionar un elemento y tiene que ser con la etiqueta que digamos.<br>
+                :first-of-type --------> representa el primer elemento de su tipo entre un grupo de elementos hermanos. <br>
+                :last-of-type --------> último. <br>
+                :nth-of-type(n) --------> selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos. <br>
+                :nth-last-of-type(n) --------> coincide con uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos, contando desde el final. <br>
+                :only-of-type --------> representa un elemento que no tiene hermanos del mismo tipo. <br>
+                <a title="">Negación.</a> <br>
+                :not --------> selecciona un elemento que no cumpla la condición, se puede poner cualquier selector salvo otro
+                 :not.
+	                .paragraph:not(div){ 
+                    --------}     (es decir Todos los que tengan la clase paragraph pero que no sean un div.
+                    )
+
+            
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Encuentranos en </h3>
+        <div class="foo">
+            
+            <a href="https://twitter.com/?lang=es"><img src="./img/icon/twiter.png" alt="" srcset=""></a>
+            <a href="https://es-es.facebook.com/"><img src="./img/icon/facebook.png" alt="" srcset=""></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="./img/icon/instagram.png" alt="" srcset=""></a>
+        
+        </div>
+        <a id="terminos">RuleTeMata © 2022</a>
+        <a href="" id="condiciones">Terminos y condiciones</a><br>
+    </footer>
+
+</body>
+</html>

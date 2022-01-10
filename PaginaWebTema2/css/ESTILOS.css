@@ -1,0 +1,121 @@
+*{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menu{
+    padding: 0% 5% 5% 5%;  
+}
+.menu>a{
+    font-size: 200%;
+    text-decoration: none;
+    color:rgba(173, 216, 230, 0.849);
+    padding: 2% 5% 2% 5%; 
+    margin-right: 2%;
+    background-color: #5bacd19f;
+    border-radius: 10px;
+    
+}
+a[href="https://example.org"] {
+    color: green;
+  }
+.menu>a:hover{
+    color: rgb(43, 65, 65);
+}
+header{
+    position: relative;
+    background-image:linear-gradient(to right , rgba(124, 101, 39, 0.829),rgba(27, 21, 26, 0.87)), url(../img/header1.jpg); 
+    width: 100%;  
+    
+    padding: 8% 0 0% 0;
+    
+}
+svg{
+    margin-bottom: 0%;
+}
+.titulo{
+    padding: 5% 0 0 0;
+}
+.titulo > h3{
+    position: relative;
+    font-size: 350%;
+    left: 25%;
+    bottom: 0%;
+    width: 100%;
+    color: rgb(195, 240, 255);
+}
+.titulo > h4{
+    position: relative;
+    font-size: 150%;
+    left: 30%;
+    bottom: 0%;
+    width: 100%;
+    color: rgb(195, 240, 255);
+}
+main{
+    background-image:linear-gradient(to right,rgba(128, 202, 226, 0.904), rgba(38, 141, 175, 0.445) ), url(../img/main.jpg) ;
+    width: 100%;
+    padding: 0 0 0% 0;
+}
+.bloque-texto{
+    padding: 0 0 5% 0;
+}
+.bloque-texto>h3{
+text-align: center;
+padding: 5% 0 0 0;
+font-size: 300%;
+color: #70346bbb;
+}
+.bloque-texto>h4{
+    text-align: left;
+    padding: 1% 0 2% 3%;
+    font-size: 200%;
+    color: #70346bbb;
+}
+.bloque-texto >p{
+    color: rgb(48, 47, 47);
+    font-size: 180%;
+    padding: 2% 3% 2% 3%;
+    margin-left:5%;
+    margin-right:5%;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    background-color: rgba(65, 105, 225, 0.568);
+}
+a[title]{
+    color: rgba(255, 0, 43, 0.863);
+    
+}
+.imagenes>img{
+    width: 40%;
+    margin-right: 4%;
+    margin-left: 4%;
+    padding: 0 0 5% 0;
+}
+    
+footer{
+    background-color: #5a2a5660;
+    width: 100;
+    margin-bottom: 0%;
+    padding: 3%;
+}
+footer>h3{
+    text-align: center;
+    padding: 5%;
+    color: #4A89D7;
+    font-size: 300%;
+}
+.foo>a>img{
+    padding: 0% 5% 5% 8%;
+    width: 20%;
+}
+#terminos{
+    padding: 2% 0 0% 2%;
+    
+}
+#condiciones{
+    position: relative;
+    left: 30%;
+    
+}
