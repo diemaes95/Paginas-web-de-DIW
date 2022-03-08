@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon/coche.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <title>Compra tu vehículo de ocasión.</title>
+</head>
+<body>
+    <header>
+          
+        <img id="iconH" src="./img/icon/icono-header.png" alt="" srcset="">
+       
+        <nav>
+             
+            <ul id="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="">Vehiculos</a>
+                  <ul>
+                    <li><a href="./retro.html">Retro</a></li>
+                    <li><a href="./ocasion.html">Ocasion </a></li>
+                    <li><a href="./turismos.html">Turismos</a></li>
+                  </ul>  
+                </li>
+                <li><a href="./repro.html">Reprogramaciones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+         <img id="lupa" src="./img/icon/lupa.png" alt="" srcset="">
+         <input  type="text" placeholder="Busqueda...." id="busqueda" alt="">
+    </header>
+    <main>
+        <h3>😈🏎️ Reprogramaciones disponibles 😈🏎️</h3>
+        <div id="content-tabla">
+            <table id="tabla"  border="1px">
+                <tr>
+                    <th></th>
+                    <th colspan="5">Reprogramaciones disponibles para coches con turbo</th>
+                </tr>
+                <tr>
+                    <th>Tipo</th>
+                    <td>stage 1 </td>
+                    <td>stage 2 </td>
+                    <td>stage 3 </td>
+                </tr>
+                <tr>
+                    <th>Requisitos</th>
+                    <td>Coche base</td>
+                    <td>Kit de admisión, down pipe,linea escape</td>
+                    <td>Cambiar turbo superior,forjar culata intercoler y conductos metalicos</td>
+                </tr>
+                <tr>
+                    <th>Aumento de potencia</th>
+                    <td>50 cv</td>
+                    <td>60 cv</td>
+                    <td>100 cv</td>
+                </tr>
+                <tr>
+                    <th>Precio</th>
+                    <td>250€</td>
+                    <td>400€(de casa)</td>
+                    <td>1500€</td>
+
+                </tr>
+            </table>
+            
+            
+        </div>
+        <div class="contenedor" style="margin-left: 30%;">
+            
+        <h1 style="width: 50%; color: blanchedalmond; background-color: rgba(128, 255, 0, 0.486);">Evoluciona con las Reprogramaciones</h1>
+        <img id="myFPImage" style="border-radius: 45px; padding: 5% 0 5% 0 ;"  src="data:image/webp;base64,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" width="500" height="600">
+        <h1 style="width: 50%; color: blanchedalmond; background-color: rgba(128, 255, 0, 0.486);">Este sera el cambio en tu coche Haz click en la imagen</h1>
+        
+        <script src="js/app.js"></script>
+        </div>
+        
+    </main>
+    <footer>
+        <h3>Visitanos en </h3>
+        <div class="foo">
+            
+            <a href="https://twitter.com/?lang=es"><img src="./img/icon/twiter.png" alt="" srcset=""></a>
+            <a href="https://es-es.facebook.com/"><img src="./img/icon/facebook.png" alt="" srcset=""></a>
+            <a href="https://www.instagram.com/?hl=es"><img src="./img/icon/instagram.png" alt="" srcset=""></a>
+        
+        </div>
+        <a id="terminos">RuleTeMata © 2022</a>
+        <a href="" id="condiciones">Terminos y condiciones</a><br>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

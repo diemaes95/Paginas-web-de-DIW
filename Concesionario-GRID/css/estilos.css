@@ -1,0 +1,461 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+    
+  }
+ 
+  nav{
+   
+    display: grid;
+    grid-row: auto;
+  }
+  .volver{
+    text-decoration: none ;
+     color: rgb(96, 180, 28);
+     padding: 1%;
+     border-radius: 35px;
+     
+  }
+  .volver:hover{
+    text-decoration: none ;
+    color: rgb(147, 180, 28);
+    background-color: #00000086;
+  }
+
+  header{
+    display: grid;
+    grid-template-rows: 10% 50% 20% 20%;
+    position: sticky;
+    font-family: Helvetica;
+    width: 100%;
+    padding: 0% 0 1% 0;
+    background-color: rgb(22, 22, 8); 
+    top:0;
+    z-index: 10;
+  }
+
+  ul{
+    list-style: none;
+    
+  }
+  #menu{
+    width: 80%;
+    margin-left: 15%;
+  }
+  #menu li>a{
+      
+    background-color: rgba(22, 22, 8, 0.685);
+    color: white;
+    padding: 1em 2em 1em 2em;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+    font-size: 130%;
+  }
+  #menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center
+  }
+ 
+  #menu>li>ul{
+    display: none;
+  }
+  #menu>li:hover>ul {
+      position: absolute;
+      display:block;
+  }
+  body{
+      background-image: url(./img/coche.jpg);
+      width: 100%;
+  }
+  header #iconH{
+      width: 10%;
+      padding: 2% 0 0 3%;
+      margin-bottom: -7%;
+      margin-top: -4%;
+  }
+  #busqueda{
+      position: absolute;
+      top: 25%;
+      right: 10%;
+      margin-top:1%;
+      font-size: 150%;
+      height: 20%;
+      width: 20%;
+      background-color: rgba(0, 45, 128, 0.267);
+  }
+  
+  #lupa{
+      position: absolute;
+      width: 1.8%;
+      top: 32%;
+      right: 3%;
+      padding: 0 2% 0 2%;
+      border-style: solid;
+      border-radius: 20px;
+      background-color: #eaeaea;
+      border-color:  #eaeaea;;
+  }
+  #lupa:hover{
+      background-color: #a8a7a7;
+      
+  }
+main{
+    background-image: linear-gradient(to right, rgba(100, 119, 225, 0.397), rgba(22, 44, 92, 0.582)),url(../img/ferr.jpg);
+    width: 100%;
+    padding: 0 0 25% 0;
+    background-attachment: fixed;
+}
+ #contenedor{
+    display: grid; 
+    width: 133.3%;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 30px;
+    grid-row-gap:1px;
+    width: 80%;
+    margin-left: 10%;
+    
+ }
+ #contenedorIndex{
+  display: grid;
+  width: 133.3%;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto ;
+  width: 80%;
+  margin-left: 10%;
+  margin: auto;
+  overflow: hidden;
+ }
+ #contenedorIndex p{
+   color: ghostwhite;
+   font-size: 200%;
+   background-color: rgba(22, 22, 8, 0.644);
+   border-radius: 45px;
+   padding: 5%;
+ }
+ #contenedorIndex p>span{
+  color: rgb(0, 177, 0);
+  font-size: 150%;
+  background-color: purple;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: colorea;
+
+}
+
+@keyframes colorea {
+  from {
+    background-color: brown;
+  }
+  50%{
+    color: blue;
+  }
+  70%{
+    color: rgb(9, 255, 0);
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ main h3{
+     
+     color: honeydew;
+     font-size: 250%;
+     text-align: center;
+     background-color: rgba(22, 22, 8, 0.808);
+     padding: 3%;
+     border-style:ridge;    
+     animation-duration: 3s;
+    animation-name: slidein;
+ }
+ @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  50%{
+    color: blue;
+  }
+  70%{
+    color: rgb(9, 255, 0);
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+ .producto{
+     width: 100%;
+     position: relative;
+     padding: 0 2% 3% 3%;
+     background-color: rgba(22, 22, 8, 0.678);  
+     margin:20px;
+ }
+ .producto img{
+     width: 100%;
+     height: 30%;
+     padding: 7% 6% 3% 0%;
+ }
+ .producto button{
+     border-radius: 45px;
+     background-color: tomato;
+     position: relative;
+     width: 75%;
+     padding: 3% 0 3% 0;
+     font-size: 150%;
+     margin-top: 10%;
+     bottom: 20px;
+     margin-left: 10%;
+ }
+ .producto button:hover{
+    background-color: rgb(102, 84, 81);
+ }
+ .producto h4{
+    color: whitesmoke;
+    font-size: 160%;
+ }
+ .producto p{
+    padding: 5% 0 0 0;
+    color: whitesmoke;
+    font-size: 130%;
+ }
+     
+footer{
+    background-color: rgba(3, 3, 1, 0.842);
+    width: 100%;
+    margin-bottom: 0%;
+    padding: 0%;
+}
+footer>h3{
+    text-align: center;
+    padding: 3%;
+    color: #f2f2f3;
+    font-size: 300%;
+}
+footer:link{
+  color: black;
+}
+.foo>a>img{
+    padding: 0% 15% 5% 8%;
+    width: 10%;
+}
+.galeria-port{/*contenedor que contiene divs de imagenes*/
+  display: grid;
+ /* justify-content: space-evenly;*/
+  /*flex-wrap: wrap;*/
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1%;
+  grid-column-gap: 1%;
+  width: 96%;
+  
+  padding: 2%;
+  background-color: rgba(22, 22, 8, 0.432);
+  border-radius: 45px;
+  margin-top: 10%;
+  }
+  .imagen-port{
+    width: 100%;
+    
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+    cursor: pointer;
+    
+}
+.imagen-port img{
+  width: 110%;
+  position: inherit;
+ 
+}
+.imagen-port img:hover { 
+  -moz-transform:rotate(-5deg); 
+  -moz-box-shadow:10px 10px 20px #000000;
+  -webkit-transform:rotate(-5deg); 
+  -webkit-box-shadow:10px 10px 20px #000000;
+  transform:rotate(2deg); 
+  box-shadow:10px 10px 20px #000000; 
+  margin-left: 10px;
+}
+#contacta{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 150%; 
+  margin-left: 10%;
+}
+#formulari{
+  position: relative;
+}
+#formulari fieldset input{
+  align-content: center;
+}
+#content-tabla{
+  
+display: grid;
+grid-template-columns: auto;
+align-content: center;
+padding: 2%;
+
+}
+#tabla{
+  width: 75%;
+  height: 100%;
+  font-size: 230%;
+  margin-left: 10%;
+  margin-top: 10px;
+  text-align: center;
+  color: cornsilk;
+  background-color: rgba(22, 22, 8, 0.863);
+  border-color: rgb(19, 1, 16);
+}
+#tabla th{
+  color: #27AE60;
+  background-color: darkslategrey;
+}
+
+
+/*formulario de la pagina contactos*/
+/*form styles*/
+#msform {
+	width: 100%;
+	margin: 10%;
+  height: 50%;
+	text-align: left;
+	position: relative;
+  z-index: 1;
+  margin-left: 0%;
+  
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+  background-color: rgba(22, 22, 8, 0.863);
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 10px;
+  
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+#msform fieldset input{
+  background-color: rgba(4, 12, 29, 0.753);
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
+hr{
+  color: #006e2e;
+  background-color: #00a143;
+  
+}
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px */
+@media (max-width: 768px) {
+  
+}
+@media screen {
+  
+}
