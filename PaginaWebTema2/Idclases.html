@@ -11,17 +11,18 @@
 <body>
     <header>    
         <nav class="menu"> 
-                <a href="../index.html">volver</a>
-                <a href="">Home</a>
+                
+                <a href="./index.html">Home</a>
                 <a href="./pseudoClases.html">Pseudo-Clases</a>
                 
                 <a href="./selecAt.html">Selectores de atributos</a>
                 <a href="./elemDinamic.html">Elementos dinamicos</a>
                 <a href="./flexygrid.html">Flex-box y Grid</a>
                 <a href="./Idclases.html">Ids y Clases</a>
+            
         </nav>
         <div class="titulo">
-            <h3>Tema 2: Uso de estilos.</h3>
+            <h3>Tema 2: Ids y Clases.</h3>
             <h4>Aprende acerca de usar estilos en html</h4>
 
         </div>
@@ -34,16 +35,24 @@
 
     <main>
         <div class="bloque-texto">
-            <h3>Uso de estilos</h3>
-            <h4>¿Que es el uso de estilos?</h4>
-            <p>Puede usar estilos para aplicar rápidamente un conjunto de opciones de formato
-                 de forma sistemática en todo el documento.  Puede cambiar el formato 
-                 (como el tamaño de fuente, el color y la sangría de texto) en estilos aplicados
-                 a títulos, títulos, párrafos, listas, entre otros.
-                Se pueden aplicar de dos formas:</p>
-             <div class="imagenes">
-                 <img src="./img/interno.PNG" alt="" srcset="">
-                 <img src="./img/externo.PNG" alt="" srcset="">
+            <h3>Clases e Ids.</h3>
+            <h4>¿Cuando y como usar cada una ?</h4>
+            <p>A primera vista, clases e IDs parece que sirven para lo mismo y que se emplearán de la misma manera: podemos aplicar
+                propiedades CSS a elementos HTML a través de ambos
+                <br><br> Usaríamos clases para los párrafos “destacados” porque lo más probable es que haya más de un párrafo
+                    que queramos destacar y así podemos controlar la apariencia de todos los párrafos destacados desde un único lugar.
+                    En cambio, también lo más probable es que sólo haya un párrafo que sea el resumen de todos los demás. En este caso
+                    usaríamos un ID,<br><br>
+                    En conclusion , usaria Clases para elementos que se van a repetir en nuestra pagina y queramos darle un estilo . <br>
+                    e IDS para elementos unicos que solo saldran 1 vez en nuestra pagina. </p>
+                    <h4>¿Como se implementaria?</h4>
+                    <p> En los elementos se le da el atributo con la palabra class="nombreclase" y id="nombre id". </p>
+                    <h4>¿Y en el CSS?</h4>
+                    <p>Con un (.) delante del nombre las clase || Con un (#) delante del nombre de id.</p>
+                    <div class="imagenes">
+
+                 <img src="./img/clases.PNG" alt="" srcset="">
+                 <img src="./img/ids.PNG" alt="" srcset="">
              </div>    
         </div>
     </main>

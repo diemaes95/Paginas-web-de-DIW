@@ -4,17 +4,24 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
+html{
+    width: 100%;
+}
 .menu{
-    padding: 0% 5% 5% 5%;  
+    padding: 3% 5% 5% 5%;  
+    
+    
 }
 .menu>a{
     font-size: 200%;
     text-decoration: none;
-    color:rgba(173, 216, 230, 0.849);
+    color:rgba(255, 255, 255, 0.993);
     padding: 2% 5% 2% 5%; 
     margin-right: 2%;
-    background-color: #5bacd19f;
+    background-color: #5b80d1d8;
     border-radius: 10px;
+    margin-top: 3%;
+    display: inline-block;
     
 }
 a[href="https://example.org"] {
@@ -23,12 +30,19 @@ a[href="https://example.org"] {
 .menu>a:hover{
     color: rgb(43, 65, 65);
 }
+svg{
+    display: block;
+    margin-bottom: 0%;
+    
+    
+}
+
 header{
     position: relative;
-    background-image:linear-gradient(to right , rgba(124, 101, 39, 0.829),rgba(27, 21, 26, 0.87)), url(../img/header1.jpg); 
+    background-image:linear-gradient(to right , #585207d7,#270d66d3), url(../img/header1.jpg); 
     width: 100%;  
     
-    padding: 8% 0 0% 0;
+    padding: 0% 0 0% 0;
     
 }
 svg{
@@ -44,47 +58,54 @@ svg{
     bottom: 0%;
     width: 100%;
     color: rgb(195, 240, 255);
+    width: 74%;
 }
 .titulo > h4{
     position: relative;
     font-size: 150%;
     left: 30%;
     bottom: 0%;
-    width: 100%;
+    width: 70%;
     color: rgb(195, 240, 255);
 }
 main{
-    background-image:linear-gradient(to right,rgba(128, 202, 226, 0.904), rgba(38, 141, 175, 0.445) ), url(../img/main.jpg) ;
+    background-image:linear-gradient(to right,#6224ffc5, rgba(38, 141, 175, 0.445) ), url(../img/main.jpg) ;
     width: 100%;
     padding: 0 0 0% 0;
 }
 .bloque-texto{
     padding: 0 0 5% 0;
+    background-color: #010d1b7e;
 }
 .bloque-texto>h3{
 text-align: center;
 padding: 5% 0 0 0;
 font-size: 300%;
-color: #70346bbb;
+color:rgba(255, 255, 255, 0.993);
 }
 .bloque-texto>h4{
     text-align: left;
     padding: 1% 0 2% 3%;
     font-size: 200%;
-    color: #70346bbb;
+    color:rgba(255, 255, 255, 0.993);
+}
+iframe{
+    margin-left: 10%;
+    
 }
 .bloque-texto >p{
-    color: rgb(48, 47, 47);
-    font-size: 180%;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
     padding: 2% 3% 2% 3%;
     margin-left:5%;
     margin-right:5%;
     border-radius: 20px;
     margin-bottom: 3%;
-    background-color: rgba(65, 105, 225, 0.568);
+    background-color: rgba(65, 105, 225, 0.76);
 }
+ 
 a[title]{
-    color: rgba(255, 0, 43, 0.863);
+    color: rgb(11, 2, 105);
     
 }
 .imagenes>img{
@@ -95,7 +116,7 @@ a[title]{
 }
     
 footer{
-    background-color: #5a2a5660;
+    background-color: #39129b;
     width: 100;
     margin-bottom: 0%;
     padding: 3%;
@@ -112,10 +133,222 @@ footer>h3{
 }
 #terminos{
     padding: 2% 0 0% 2%;
-    
+    color: #000;
 }
 #condiciones{
     position: relative;
     left: 30%;
+    color: #000;
+}
+.container{
+    display: inline-block;
     
 }
+h1{
+    display: inline-block;
+}
+.caja{
+  width: 180px;
+  height: 180px;
+  background-color: #30B037;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+}
+.caja1{
+  background-color: #C0392B;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+.caja1:hover{
+  background-color: #3F51B5;
+}
+.caja2{
+  background-color: #9B59B6;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+}
+.caja2:hover{
+  font-size: 28px;
+}
+.caja3{
+  background-color: #2980B9;
+  -webkit-transition: color 1s linear;
+  transition: color 1s linear;
+}
+.caja3:hover{
+  color: yellow;
+}
+.caja4{
+  background-color: #3498DB;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja4:hover{
+  line-height: 300px;
+}
+.caja5{
+  border-radius: 0px;
+  background-color: #17A589;
+  -webkit-transition: 1s linear;
+  transition: 1s linear
+}
+.caja5:hover{
+  border-radius: 20px;
+}
+.caja6{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #F1C40F;
+}
+.caja6:hover{
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}
+.caja7{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #E67E22;
+}
+.caja7:hover{
+  opacity: 0.3;
+}
+.caja8{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #95A5A6;
+}
+.caja8:hover{
+  border-style: solid;
+  border-color: #95A5A6;
+  border-color: #000;
+}
+.caja9{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #2C3E50;
+}
+.caja9:hover{
+  margin: 80px;
+}
+.caja10{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: black;
+}
+.caja10:hover{
+  padding: 30px;
+}
+
+
+
+
+
+/*transformaciones*/
+
+.caja11{
+    background-color: #C0392B;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja11:hover{
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+  }
+  .caja12{
+    background-color: #9B59B6;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja12:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  .caja13{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #2980B9;
+  }
+  .caja13:hover{
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
+  }
+  .caja14{
+    background-color: #3498DB;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja14:hover{
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  .caja15{
+    background-color: #17A589;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja15:hover{
+    -webkit-transform: skewY(10deg);
+    transform: skewY(10deg);
+  }
+  .caja16{
+    background-color: #F1C40F;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja16:hover{
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+  }
+  .caja17{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #E67E22;
+  }
+  .caja17:hover{
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  .caja18{
+  
+    -webkit-transition: 1s linear;
+  
+    transition: 1s linear;
+    background-color: #95A5A6;
+  }
+  .caja18:hover{
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  .caja19{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #2C3E50;
+  }
+  .caja19:hover{
+    -webkit-transform: perspective(150px) rotateX(45deg);
+    transform: perspective(150px) rotateX(45deg);
+  }
+  .caja20{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: grey;
+  }
+  .caja20:hover{
+    -webkit-transform: perspective(150px) rotateY(45deg);
+    transform: perspective(150px) rotateY(45deg);
+  }
+  .caja21{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: black;
+  }
+  .caja21:hover{
+    -webkit-transform: matrix(0.5, 0.1, 0.5,1,10, -2);
+    transform: matrix(0.5, 0.1, 0.5, 1, 10, -2);
+  }
+  
